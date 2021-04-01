@@ -1,0 +1,5 @@
+spi.c:40:6:spi_init	40	static
+spi.c:70:6:spi_set_max_speed	0	static
+spi.c:76:10:spi_set_speed	8	static
+spi.c:86:9:spi_get_byte	0	static
+spi.c:95:9:spi_put_byte	8	static

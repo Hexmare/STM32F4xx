@@ -1,0 +1,3 @@
+grbllib.c:94:6:dummy_bool_handler	0	static
+grbllib.c:59:13:stream_tx_blocking	8	static
+grbllib.c:101:5:grbl_enter	32	static

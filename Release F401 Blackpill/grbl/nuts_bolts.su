@@ -1,0 +1,9 @@
+nuts_bolts.c:72:7:uitoa	8	static
+nuts_bolts.c:91:7:ftoa	20	static
+nuts_bolts.c:152:6:read_float	20	static
+nuts_bolts.c:215:6:isintf	16	static
+nuts_bolts.c:221:6:delay_sec	24	static
+nuts_bolts.c:239:7:convert_delta_vector_to_unit_vector	8	static
+nuts_bolts.c:262:9:calc_checksum	0	static
+nuts_bolts.c:275:7:strcaps	12	static
+nuts_bolts.c:290:6:dummy_handler	0	static
