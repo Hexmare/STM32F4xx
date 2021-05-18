@@ -1,5 +1,5 @@
 /*
-  cnc_boosterpack_map.h - driver code for STM32F4xx processor (on Blackpill board)
+  mini_blackpill_map.h - driver code for minimal STM32F4xx (Blackpill) breakout board 
 
   Part of GrblHAL
 
@@ -81,6 +81,7 @@
 #define Y_LIMIT_BIT      (1<<Y_LIMIT_PIN)
 #define Z_LIMIT_BIT      (1<<Z_LIMIT_PIN)
 #if N_AXIS > 3
+// Not tested, might need to remap due to B15 being mapped to probe
 #define A_LIMIT_PIN      15
 #define A_LIMIT_BIT      (1<<A_LIMIT_PIN)
 #define LIMIT_MASK       (X_LIMIT_BIT|Y_LIMIT_BIT|Z_LIMIT_BIT|A_LIMIT_BIT) // All limit bits
@@ -129,13 +130,14 @@
 #define PROBE_PIN                   15
 #define PROBE_BIT                   (1<<PROBE_PIN)
 
+// NOT SUPPORTED
 #if KEYPAD_ENABLE
 #error Keypad not supported
 #define KEYPAD_PORT                 GPIOB
 #define KEYPAD_STROBE_PIN           15
 #define KEYPAD_STROBE_BIT           (1<<KEYPAD_STROBE_PIN)
 #endif
-
+// NOT SUPPORTED
 #if SDCARD_ENABLE
 #error SDcard not supported
 #define SD_CS_PORT  GPIOA
